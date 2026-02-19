@@ -23,10 +23,9 @@ install(TARGETS talker listener
   DESTINATION lib/${PROJECT_NAME}
 )
 
-# TODO: Install the launch directory
-# install(DIRECTORY launch
-#   DESTINATION share/${PROJECT_NAME}
-# )
+install(DIRECTORY launch
+DESTINATION share/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
